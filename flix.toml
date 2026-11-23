@@ -1,5 +1,4 @@
 [package]
 version = "0.1.0"
 flix    = "0.80.0"
-
-# repository = "github:<owner>/tackling-side-effects-with-functional-programming-and-flix"
+repository = "github:lagenorhynque/tackling-side-effects-with-functional-programming-and-flix"
