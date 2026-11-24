@@ -1,5 +1,8 @@
 pub mod TacklingSideEffects.AlgebraicDataType.Charge {
-    pub enum Charge({creditCard = CreditCard, amount = Float64})
+    pub enum Charge({
+        creditCard = CreditCard,
+        amount     = Float64
+    })
 
     instance ToString[Charge] {
         pub def toString(charge: Charge): String =
