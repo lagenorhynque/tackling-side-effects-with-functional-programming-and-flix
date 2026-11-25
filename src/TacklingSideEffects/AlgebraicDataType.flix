@@ -28,4 +28,9 @@ pub mod TacklingSideEffects.AlgebraicDataType {
     pub def example_buyCoffees(): Unit \ IO =
         let result = Cafe.buyCoffees(Charge.CreditCard.CreditCard("A"), 3);
         println("Result of buying 3 coffees: ${result}")
+
+    pub def example(): Unit \ IO =
+        let (cup, charge) = Cafe.buyCoffee(Charge.CreditCard.CreditCard("A"));
+        ChargeExecutor.execute(charge);
+        println("a cup of ${cup}")
 }
